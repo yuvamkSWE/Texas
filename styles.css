@@ -1,113 +1,8 @@
-.texas-bg{
-    padding: 0px;
-    margin: 0px;
-    height: 100vh;
-    width: 100%;
-
-}
-body{
-    padding: 0px;
-    margin: 0px;
-}
-
-.logo{
-    height: 70px;
-    padding-left: 5%;
-}
-
-
-
 *{
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
+    font-family: 'JetBrains Mono';
+    margin: 0px;
+    padding: 0px;
 }
-
-body{
-    font-family: montserrat;
-}
-
-
-
-nav{
-    z-index: 100;
-    height: 80px;
-    position: absolute;
-    width: 100%;
-}
-
-nav ul{
-    float: right;
-    margin-right: 5%;
-}
-nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-}
-nav ul li a{
-    color: rgb(48, 41, 41);
-    font-size: 24px;
-    padding: 7px 13px;
-   border-radius: 10px;
-    text-transform: initial;
-}
-
-
-a:hover{
-    background: rgba(224, 255, 255, 0.269);
-    transition: 0.5s;
-}
-
-.checkbtn{
-    font-size: 30px;
-    color: black;
-    float: right;
-    line-height: 80px;
-    cursor: pointer;
-    margin-right: 40px;
-    display: none;
-}
-
-#check{
-    display: none;
-
-}
-
-@media (max-width: 710px) {
-
-    .checkbtn{
-        display: block;
-    }
-    ul{
-        position: fixed;
-        width: 100%;
-        height: 45vh;
-        background: #474646b5;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-    }
-    nav ul li{
-        display: block;
-    }
-    nav ul li a{
-        font-size: 24px;
-    }
-    a:hover{
-        background: none;
-        color: #000000;
-    }
-
-    #check:checked ~ ul{
-        left: 0;
-        transition: 0.5s;
-    }
-
-}
-
 
 
 
@@ -115,6 +10,8 @@ a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+  
 }
 
 
@@ -124,15 +21,15 @@ a:hover{
     width: 95%;
     position: absolute;
     top: 220px;
-    
+    align-items: center;
     
     display: flex;
 }
 .texas-info{
-    width: 700px;
+    width: 100%;
     display: inline-block;
    
-    margin-right: 10px;
+
 }
 
 .texas-info-text{
@@ -142,47 +39,12 @@ a:hover{
     
     margin-top: 40vh;
     h1{
-        font-size: 65px;
+        font-size: 75px;
         font-weight: bolder;
     }
     p{
-        font-size: 19px;
+        font-size: 34px;
         font-weight: bold;
       
     }
-}
-.cities{
-    flex: 1;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 10px;
-    row-gap: 10px;
-}
-
-.card{
-    background-color: transparent;
-    padding: 0;
-    margin: 0;
-}
-
-.city-img{
-    object-fit: contain;
-    width: 100%;
-    border-radius: 20px;
-    position: relative;
-}
-
-.city-card {
-    position: relative;
-}
-
-.city-card .t {
-    position: absolute;
-    bottom: 50px;
-    left: 10px;
-    color: rgb(207, 202, 202);
-    font-size: 20px;
-    margin: 0; /* Reset margin */
-    padding: 0; /* Reset padding */
-    font-size: 30px;
 }

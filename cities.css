@@ -1,0 +1,69 @@
+
+
+.city:nth-child(1) {
+    background-image: url(images/dallas.jpg);
+
+}
+
+.city:nth-child(2) {
+    background-image: url(images/austin.jpeg);
+    
+}
+
+.city:nth-child(3) {
+    background-image: url(images/houston.jpg);
+   
+}
+
+.city:nth-child(4) {
+    background-image: url(images/san-antonio.avif);
+    
+}
+
+.cities{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+
+.container{
+    margin-top: 90px;
+    margin-bottom: 90px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 90%;
+
+}
+
+.city{
+  background-size: cover;
+  background-position: center ;
+  background-repeat: no-repeat ;
+  height: 900px;
+  cursor: pointer;
+  border-radius: 40px;
+  flex: 0.7;
+  margin: 10px;
+  position: relative;
+  transition: flex 0.7s ease-in-out;
+}
+.city.active{
+    flex: 5;
+}
+.city.active h3{
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+.city h3{
+    color: white;
+    position: absolute;
+    font-size: 50px;
+    bottom: 10px;
+    left: 20px;
+    opacity: 0;
+    transition: 0.4s ease;
+}
+
+
